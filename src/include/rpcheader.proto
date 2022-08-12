@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pmrpc;
+
+message HeadSize
+{
+    uint32 head_size = 1;
+}
+
+message RpcHeader
+{
+    bytes service_name = 1;
+    bytes method_name = 2;
+    uint32 arg_size = 3;
+};
+
+

@@ -1,0 +1,55 @@
+syntax="proto3";  //声明版本
+
+package fixbug; //声明所在的包
+
+
+//默认不会生成RPC方法类型 需要显示设置开启
+option cc_generic_services = true;
+
+message ErrorCode
+{
+  int32 errcode = 1;
+  bytes errmsg = 2;
+}
+
+//登录请求类型
+message  LoginRequest
+{
+  string name = 1;
+  bytes pwd = 2;
+}
+
+
+//登录响应类型
+message  LoginResponse
+{
+  ErrorCode result_code = 1;
+  bool success = 3;
+}
+
+
+message User
+{
+  bytes name = 1;
+  uint32 age =2;
+  enum SEX{
+    MAN = 0;
+    WOMAN = 1;
+  }  
+  SEX sex = 3;
+}
+
+message GetFriendListResponse
+{
+   ErrorCode result_code = 1;
+   //列表类型
+   repeated User user_list = 2;
+}
+
+
+//定义一个描述RPC方法的类型
+
+service UserServiceRpc
+{
+ rpc Login (LoginRequest) returns (LoginResponse);
+}

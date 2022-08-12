@@ -1,0 +1,60 @@
+syntax="proto3";
+
+package cxr;
+
+option cc_generic_services = true;
+
+
+ message ResultCode
+ {
+    int32 errcode = 1;
+    bytes errmsg =  2;
+ }
+
+ message LoginRequest
+ {
+    bytes name = 1;
+    bytes pwd =  2;
+ }
+
+  
+ message LoginResponse
+ {
+    ResultCode res_code = 1;
+    bool success =  2;
+ }
+
+ message RegisterRequest
+ {
+    bytes name = 1;
+    bytes pwd =  2;
+ }
+
+  
+ message RegisterResponse
+ {
+    ResultCode res_code = 1;
+    bool success =  2;
+ }
+
+ message User
+  {
+   uint32 id = 1;
+    bytes name = 2;
+  }
+
+ message GetFriendsRequest
+ {
+    uint32 id = 1;
+ }
+
+ message GetFriendsResponse
+ {
+    repeated User users = 1;
+ }
+
+ service UserServiceRpc
+ {
+   rpc Login(LoginRequest) returns (LoginResponse);
+   rpc Register(RegisterRequest) returns (RegisterResponse);
+ }
