@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/pmRpcConfig.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/pmRpcConfig.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/pmRpcConfig.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/pmRpcChannel.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/pmRpcChannel.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/pmRpcChannel.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/rpcheader.pb.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/rpcheader.pb.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/rpcheader.pb.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/RpcProvider.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/RpcProvider.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/RpcProvider.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/ZookeeperUtil.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/ZookeeperUtil.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/ZookeeperUtil.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o src/CMakeFiles/pmrpc.dir/pmRpcApplication.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/src/pmRpcApplication.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/src/pmRpcApplication.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o example/callee/CMakeFiles/provider.dir/UserService.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/example/callee/UserService.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/example/callee/UserService.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o example/callee/CMakeFiles/provider.dir/__/User.pb.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/example/User.pb.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/example/User.pb.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o example/caller/CMakeFiles/consumer.dir/CallUserService.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/example/caller/CallUserService.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/example/caller/CallUserService.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o example/caller/CMakeFiles/consumer.dir/__/User.pb.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/example/User.pb.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/example/User.pb.cc"
+},
+
+{
+  "directory": "/root/project/pmRPC/pmRPC/pmRPC/build",
+  "command": "/usr/bin/g++    -I../src -I../src/include -I../example  -g   -o example/test_zkutil/CMakeFiles/zk_client.dir/test_zkutil.cc.o -c /root/project/pmRPC/pmRPC/pmRPC/example/test_zkutil/test_zkutil.cc",
+  "file": "/root/project/pmRPC/pmRPC/pmRPC/example/test_zkutil/test_zkutil.cc"
+}
+]

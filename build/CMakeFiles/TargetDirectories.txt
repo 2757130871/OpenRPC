@@ -1,0 +1,16 @@
+/root/project/pmRPC/pmRPC/pmRPC/build/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/CMakeFiles/rebuild_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/src/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/src/CMakeFiles/pmrpc.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/src/CMakeFiles/rebuild_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/CMakeFiles/rebuild_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/callee/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/callee/CMakeFiles/provider.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/callee/CMakeFiles/rebuild_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/caller/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/caller/CMakeFiles/consumer.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/caller/CMakeFiles/rebuild_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/test_zkutil/CMakeFiles/edit_cache.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/test_zkutil/CMakeFiles/zk_client.dir
+/root/project/pmRPC/pmRPC/pmRPC/build/example/test_zkutil/CMakeFiles/rebuild_cache.dir
