@@ -1,6 +1,6 @@
 #include "pmRpcApplication.h"
 #include "pmRpcChannel.h"
-
+#include "pmController.h"
 #include "User.pb.h"
 
 void test_login()
@@ -11,15 +11,26 @@ void test_login()
     req.set_pwd("1231123");
     cxr::LoginResponse resp;
 
-    stub.Login(nullptr, &req, &resp, nullptr);
+    // controller对象的作用：在发起一次RPC调用时并不是一定成功，
+    //可能序列化出现错误、网络发送错误、反序泪化错误等等，ctrller对象可以记录错误结果
+    //在RPC方法调用返回时就可以通过ctrller对象判断此次RPC调用是否发生错误
+    pmController ctrller;
+    stub.Login(&ctrller, &req, &resp, nullptr);
 
-    if (resp.success())
+    if (!ctrller.Failed())
     {
-        std::cout << "Login success: " << resp.success() << std::endl;
+        if (resp.success())
+        {
+            std::cout << "Login success: " << resp.success() << std::endl;
+        }
+        else
+        {
+            std::cout << "login error" << std::endl;
+        }
     }
     else
     {
-        std::cout << "login error" << std::endl;
+        std::cout << "stub.Login error! reason: " << ctrller.ErrorText() << std::endl;
     }
 }
 
@@ -48,5 +59,5 @@ int main(int argc, char **argv)
     //第一步 初始化
     pmRpcApplication::init(argc, argv);
 
-    test_register();
+    test_login();
 }
