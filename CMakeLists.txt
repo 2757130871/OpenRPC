@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(pmRPC)
+project(OpenRPC)
 
 
 #调试使用
